@@ -52,19 +52,15 @@ body {
 }
 .photo_1 {
    background: url('./assets/photo1.jpg') no-repeat center / contain;
-   /* background-size: 100%; */
 }
 .photo_2 {
    background: url('./assets/photo2.jpg')  no-repeat center / contain;
-   /* background-size: 100%; */
 }
 .photo_3 {
    background: url('./assets/autumn.jpg') no-repeat center / contain;
-   /* background-size: 100%; */
 }
 .photo_4 {
    background: url('./assets/photo4.jpg') no-repeat center / contain;
-   /* background-size: 100%; */
 }
 
 #slide_1:checked~.slider__photos .photos {
