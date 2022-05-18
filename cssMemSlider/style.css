@@ -2,6 +2,7 @@
    --col-bg: #25282a;
    --col-bullet: #71acfe;
    --col-hover: #FFFFFF;
+   --col-active: yellow;
 }
 
 body {
@@ -145,6 +146,11 @@ body {
 
 .slider__bullets label:hover .bullet {
    background-color: var(--col-hover);
+   border: 3px solid var(--col-hover);
+}
+
+.slider__bullets label:active .bullet {
+   background-color: var(--col-active);
    border: 3px solid var(--col-hover);
 }
 
