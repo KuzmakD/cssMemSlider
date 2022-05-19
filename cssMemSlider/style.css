@@ -18,7 +18,7 @@ body {
    flex-direction: column;
    align-items: center;
    background-color: var(--col-bg);
-   row-gap: 15px;
+   row-gap: 1rem;
 }
 
 .memSlider {
@@ -27,7 +27,7 @@ body {
    justify-content: flex-start;/*space-between;*/
    width: 80%;
    height: 100vh;
-   row-gap: 25px;
+   row-gap: 1.6rem;
 }
 .memSlider input {
    display: none;
@@ -36,7 +36,7 @@ body {
 /* SLIDER PHOTOS START*/
 .slider__photos {
    width: 100%;
-   height: calc(100% - 20px - 2.5rem);
+   height: calc(100% - 1.25rem - 2.5rem);
    overflow: hidden;
    padding: 0;
    background-color: black;
@@ -134,24 +134,25 @@ body {
 #slide_3:checked~.slider__names .slider__bullets #bullet_3 .bullet,
 #slide_4:checked~.slider__names .slider__bullets #bullet_4 .bullet {
    background-color: var(--col-bg);
-   border: 3px solid var(--col-bullet);
+   border: 0.2rem solid var(--col-bullet);
 }
 
 #slide_1:checked~.slider__names .slider__bullets #bullet_1:hover .bullet,
 #slide_2:checked~.slider__names .slider__bullets #bullet_2:hover .bullet,
 #slide_3:checked~.slider__names .slider__bullets #bullet_3:hover .bullet,
 #slide_4:checked~.slider__names .slider__bullets #bullet_4:hover .bullet {
-   border: 3px solid var(--col-hover);
+   border: 0.2rem solid var(--col-hover);
 }
 
 .slider__bullets label:hover .bullet {
    background-color: var(--col-hover);
-   border: 3px solid var(--col-hover);
+   border: 0.2rem solid var(--col-hover);
 }
 
 .slider__bullets label:active .bullet {
-   background-color: var(--col-active);
-   border: 3px solid var(--col-hover);
+   background-color: var(--col-active) !important;
+   border: 0.2rem solid var(--col-hover);
+   transform: scale(2);
 }
 
 .bullet {
@@ -159,20 +160,8 @@ body {
    height: 1.5rem;
    border-radius: 50%;
    background-color: var(--col-bullet);
-   border: 3px solid var(--col-bullet);
+   border: 0.2rem solid var(--col-bullet);
 }
-/* 
-@media screen and (max-width: 1920px) {
-   .memSlider {
-      height: 80vh;
-   }
-}
-
-@media screen and (max-width: 1520px) {
-   .memSlider {
-      height: 70vh;
-   }
-} */
 
 @media screen and (max-width: 1024px) {
    /* .memSlider {
@@ -193,11 +182,7 @@ body {
    }
 }
 
-/* @media screen and (max-width: 768px) {
-   .memSlider {
-      height: 70vh;
-   }
-} */
+
 
 
 
